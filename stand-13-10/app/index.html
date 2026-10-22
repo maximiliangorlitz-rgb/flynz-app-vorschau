@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>FLYNZ</title>
+<style>*{scrollbar-width:none}*::-webkit-scrollbar{display:none}html,body{height:100%;margin:0}body{overflow:hidden}#root{display:flex;height:100%;flex:1}</style>
+<script>
+// Ordner merken, damit Bilder und App-Code auch nach dem Umschreiben der Adresse gefunden werden
+(function () {
+  var ordner = location.href.replace(/[?#].*$/, '').replace(/[^\/]*$/, '')
+  document.write('<base href="' + ordner + '">')
+})()
+</script>
+<script>
+// Die App erwartet die Startadresse "/" (so wie in der App selbst)
+try { history.replaceState(null, '', '/') } catch (e) {}
+</script>
+<script src="app-code/index-6f798e22638d12640ec28e4e12f26dea.js" defer></script>
+</head>
+<body><div id="root"></div></body>
+</html>
